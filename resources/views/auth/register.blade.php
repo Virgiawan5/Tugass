@@ -25,7 +25,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-dark bg-primary mb-4">
       <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1">RS Suka-Suka</span>
+        <span class="navbar-brand mb-0 h1">Rumah Sakit</span>
       </div>
     </nav>
     <!-- akhir navbar -->
@@ -38,7 +38,7 @@
                     <div class="wrapper bg-white text-center p-3">
                     <form method="post" action="/store_register">
                         @csrf
-                        <h2 class="mb-4">Register</h2>
+                        <h2 class="mb-4">Registrasi</h2>
                         
                         @if($errors->any())
                         <div class="alert alert-danger my-4">
@@ -51,7 +51,7 @@
                         @endif
                         
                         <div class="mb-3">
-                            <label for="username">Username</label>
+                            <label for="username">Nama</label>
                             <input type="text" name="username" id="username" class="form-control" required value="{{old('username')}}">
                         </div>
                         <div class="mb-3">
@@ -63,10 +63,10 @@
                             <input type="password" name="confirm" class="form-control" id="confirm" required>
                         </div>
                         <div class="d-block mb-3">
-                            <button type="submit" class="btn btn-success -block">Register</button>
+                            <button type="submit" class="btn btn-success -block">Daftar</button>
                         </div>
                     </form>
-                    <a class="nav-link" href="/login">Sudah punya akun? login sekarang</a>
+                    <a class="nav-link" href="/login">Masuk</a>
                 </div>
             </div>
         </div>

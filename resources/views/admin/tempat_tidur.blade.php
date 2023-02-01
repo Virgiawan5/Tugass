@@ -28,13 +28,6 @@
 					<div class="col-xl-12">
 						<div class="card">
 							<div class="card-body">
- <form method="post" action="/cari_tmptidur">
-     @csrf
-							        <div class="input-group mb-4">
-							            <input type="text" placeholder="Cari Nama Ruang..." required class="form-control" name="keyword">
-							            <button type="submit" class="btn btn-primary">Cari</button>
-							        </div>
-							    </form>
 							    <a href="/tambah_tmptidur" class="btn btn-success mb-3">Tambah</a>
 								<div class="table-responsive">
 								    @if(session('sukses'))
@@ -68,7 +61,6 @@
 										</thead>
 										<tbody>
 						<?php
-						//rumus: ($tmptidur->currentPage()*data per halaman) - (data per halaman - 1)
 						$i=($tmptidur->currentPage()*10) - 9 
 						?>
 						@foreach($tmptidur as $t)					<tr>
@@ -93,7 +85,7 @@
                             <form class="d-inline" method="post" action="/hapus_tmptidur">
                                 @csrf
                             <input type="hidden" value="{{$t->id}}" name="id">
-                            <button class="btn" onclick="return confirm('Yakin mau menghapus?')"><i class="far fa-trash-alt"></i></button>
+                            <button class="btn"><i class="far fa-trash-alt"></i></button>
                             </form>
 												</td>
 											</tr>

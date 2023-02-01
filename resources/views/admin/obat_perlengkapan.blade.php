@@ -28,13 +28,6 @@
 					<div class="col-xl-12">
 						<div class="card">
 							<div class="card-body">
-                         <form method="post" action="/cari_obat">
-                             @csrf
-							        <div class="input-group mb-4">
-							            <input type="text" placeholder="Cari nama atau tipe obat..." required class="form-control" name="keyword">
-							            <button type="submit" class="btn btn-primary">Cari</button>
-							        </div>
-							    </form>
 							    <a href="/tambah_obat" class="btn btn-success mb-3">Tambah</a>
 								<div class="table-responsive">
 								    
@@ -81,7 +74,7 @@
                             <form method="post" class="d-inline" action="/hapus_obat">
                                 @csrf
                                 <input type="hidden" name="id" value="{{$o->id}}">
-                                <button type="submit" class="btn" onclick="return confirm('Yakin mau menghapus?')"><i class="far fa-trash-alt"></i></button>
+                                <button type="submit" class="btn"><i class="far fa-trash-alt"></i></button>
 							</form>					</td>
 											</tr>
 						@endforeach				</tbody>

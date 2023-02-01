@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -131,17 +130,7 @@
 					<div class="main-header-right">
 						<div class="nav nav-item  navbar-nav-right ml-auto">
 							<div class="dropdown main-profile-menu nav nav-item nav-link">
-								<a class="profile-user d-flex" href=""><img src="/gambar/profil.png">
-									<div class="p-text d-none">
-										<span class="p-name font-weight-bold">{{session('username')}}</span>
-										<small class="p-sub-text">Administrator</small>
-									</div>
-								</a>
 								<div class="dropdown-menu shadow">
-									<div class="main-header-profile header-img">
-										<div class="main-img-user"><img src="/gambar/profil.png"></div>
-										<h6>{{session('username')}}</h6><span>Administrator</span>
-									</div>
 									<a class="dropdown-item" href="/logout"><i class="fas fa-sign-out-alt"></i> Log Out</a>
 								</div>
 							</div>
@@ -166,32 +155,20 @@
 		<div class="sidebar sidebar-right sidebar-animate">
 			<div class="panel panel-primary card mb-0 box-shadow">
 				<div class="tab-menu-heading border-0 p-3">
-					<div class="card-title mb-0">Profil Saya</div>
+					<div class="card-title mb-0"></div>
 					<div class="card-options ml-auto">
 						<a href="#" class="sidebar-remove"><i class="fas fa-times"></i></a>
 					</div>
 				</div>
 				<div class="panel-body tabs-menu-body latest-tasks p-0 border-0">
-					                    <div class="tab-content">
+					<div class="tab-content">
 						<div class="tab-pane active" id="side1">
 							<div class="card-body text-center">
-								<div class="dropdown user-pro-body">
-									<div class="">
-										<img class="avatar avatar-xl brround mx-auto text-center" src="/gambar/profil.png"><span class="avatar-status profile-status bg-green"></span>
-									</div>
 									<div class="user-info mg-t-20">
-										<h6 class="font-weight-semibold  mt-2 mb-0">{{session('username')}}</h6>
-										<span class="mb-0 text-muted">Administrator</span>
+										<span class="mb-0 text-muted">Admin</span>
 									</div>
 								</div>
 							</div>
-							<a class="dropdown-item d-flex pd-y-15 border-bottom" href="/logout">
-								<div class="d-flex"><i class="fas fa-sign-out-alt mr-3 tx-20 mg-t-5 text-muted"></i>
-									<div>
-										<h6 class="mb-0">Log Out</h6>
-									</div>
-								</div>
-							</a>
 						</div>
 					</div>
 				</div>
@@ -200,11 +177,6 @@
 		<!--/Sidebar-right-->        
         
         <!-- Footer opened -->
-		<div class="main-footer ht-40">
-			<div class="container-fluid pd-t-0-f ht-100p">
-				<span>Copyright © 2021 <a href="#">RS Suka-Suka</a></span>
-			</div>
-		</div>
 		<!-- Footer closed -->
         <!-- Back-to-top -->
 		<a href="#top" id="back-to-top"><i class="fas fa-arrow-up"></i></a>

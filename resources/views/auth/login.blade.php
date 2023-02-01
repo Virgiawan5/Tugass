@@ -25,7 +25,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-dark bg-primary mb-4">
       <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1">RS Suka-Suka</span>
+        <span class="navbar-brand mb-0 h1">Rumah Sakit</span>
       </div>
     </nav>
     <!-- akhir navbar -->
@@ -59,7 +59,7 @@
                         @endif
                         
                         <div class="mb-3">
-                            <label for="username">Username</label>
+                            <label for="username">Nama</label>
                             <input type="text" name="username" id="username" class="form-control" required>
                         </div>
                         <div class="mb-3">
@@ -67,10 +67,10 @@
                             <input type="password" name="password" class="form-control" id="password" required>
                         </div>
                         <div class="d-block mb-3">
-                            <button type="submit" class="btn btn-success -block">Login</button>
+                            <button type="submit" class="btn btn-success -block">Masuk</button>
                         </div>
                     </form>
-                    <a href="/register" class="nav-link">Belum punya akun? daftar sekarang</a>
+                    <a href="/register" class="nav-link">Daftar</a>
                 </div>
             </div>
         </div>

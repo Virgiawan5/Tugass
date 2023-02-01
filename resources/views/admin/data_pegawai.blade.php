@@ -28,13 +28,6 @@
 		<div class="col-xl-12">
 			<div class="card">
 				<div class="card-body">
-                    <form method="post" action="/cari_pegawai">
-                        @csrf
-							        <div class="input-group mb-4">
-							            <input type="text" placeholder="Cari Nama Pegawai..." required class="form-control" name="keyword">
-							            <button type="submit" class="btn btn-primary">Cari</button>
-							        </div>
-							    </form>
 							    <a href="/tambah_pegawai" class="btn btn-success mb-3">Tambah</a>
 					<div class="table-responsive">
 					    @if(session('sukses'))

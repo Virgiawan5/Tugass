@@ -28,13 +28,6 @@
 					<div class="col-xl-12">
 						<div class="card">
 							<div class="card-body">
-                         <form method="post" action="/cari_jadwal">
-                             @csrf
-							        <div class="input-group mb-4">
-							            <input type="text" placeholder="Cari Nama Dokter..." required class="form-control" name="keyword">
-							            <button type="submit" class="btn btn-primary">Cari</button>
-							        </div>
-							    </form>
 							    <a href="/tambah_jadwal" class="btn btn-success mb-3">Tambah</a>
 								<div class="table-responsive">
 							@if(session('sukses'))
@@ -82,7 +75,7 @@
                             <form action="/hapus_jadwal" method="post" class="d-inline">
                                 @csrf
                                 <input type="hidden" value="{{$j->id}}" name="id">
-                            <button class="btn" onclick="return confirm('Yakin mau menghapus?')"><i class="far fa-trash-alt"></i></button>
+                            <button class="btn"><i class="far fa-trash-alt"></i></button>
 							</form>					</td>
 											</tr>
 						@endforeach					

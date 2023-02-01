@@ -5,8 +5,6 @@
 @section('content')
     <div class="container-fluid mg-t-20">
 
-				<!-- breadcrumb -->
-
 				<div class="breadcrumb-header justify-content-between">
 
 					
@@ -18,13 +16,10 @@
 
 
 				</div>
-				<!-- breadcrumb -->
-
-				
-				<!-- row opened -->
+			
 				<div class="row row-sm">
 
-					<!--div-->
+					
 					    
 					    @if($errors->any())
 					        <div class="alert alert-danger my-3">
@@ -66,10 +61,8 @@
                         <button type="submit" class="btn btn-success"><i class="fas fa-save"></i> Save</button>
                         </form>
 					</div>
-					<!--/div-->
 				</div>
-				<!-- /row -->
-
+				
 
             </div>
 @endsection

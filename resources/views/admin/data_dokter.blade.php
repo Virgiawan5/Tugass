@@ -43,13 +43,6 @@
 					    @endif
 						<div class="card">
 							<div class="card-body">
-							    <form method="post" action="/cari_dokter">
-							        @csrf
-							        <div class="input-group mb-4">
-							            <input type="text" placeholder="Cari Nama Dokter..." required class="form-control" name="keyword">
-							            <button type="submit" class="btn btn-primary">Cari</button>
-							        </div>
-							    </form>
 							    <a href="/tambah_dokter" class="btn btn-success mb-3">Tambah</a>
 								<div class="table-responsive">
 									<table class="table table-striped mg-b-0 text-md-nowrap border">
@@ -81,7 +74,7 @@
                             <form method="post" action="/hapus_dokter" class="d-inline">
                                 @csrf
                             <input type="hidden" name="id" value="{{$d->id}}">
-                            <button type="submit" class="btn d-inline"><i class="far fa-trash-alt" onclick="return confirm('Yakin mau menghapus {{$d->nama}}?')"></i></button>
+                            <button type="submit" class="btn d-inline"><i class="far fa-trash-alt"></i></button>
                             </form>
 												</td>
 											</tr>
